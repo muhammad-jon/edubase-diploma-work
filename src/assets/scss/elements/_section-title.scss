@@ -1,0 +1,35 @@
+/*---------------------------
+ * Section Title
+----------------------------*/
+.section-title {
+  .pre-title {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgb(162, 162, 162);
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    letter-spacing: 0.1em;
+  }
+  .title {
+    margin-bottom: 0;
+    font-size: 40px;
+    @media #{$large-mobile} {
+      font-size: 32px;
+    }
+    br {
+      @media #{$sm-layout} {
+        display: none;
+      }
+    }
+  }
+  &.text-white {
+    .pre-title {
+      color: var(--color-white);
+    }
+    .title {
+      color: var(--color-white);
+    }
+  }
+}
